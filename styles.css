@@ -476,7 +476,6 @@ main{
         max-width: 880px;
     }
 
-    
     .header-container{
         flex-direction: column;
         gap: 5rem;
@@ -502,11 +501,10 @@ main{
         width: 6vw;
     }
     
-    
     .box-post-main{
         flex-direction: column-reverse;
         gap: 2rem;
-        padding: 6rem 0rem 3rem 0rem;
+        padding: 6rem 0rem 6rem 0rem;
     }
     
     .card-post{
@@ -516,7 +514,6 @@ main{
         height: 25vh;
     }
 
-    
     .card-text-main{
         width: 50vw;
     }
@@ -543,6 +540,9 @@ main{
         flex-direction: column;
         align-items: center;
         text-align: center;
+
+        padding-bottom: 2rem;
+        border-bottom: 0.4rem solid var(--green);
     }
     
     .card-content-left{
@@ -573,11 +573,11 @@ main{
     }
     
     .card-title{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .card-text{
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-bottom: 1.8rem;
     }
     
@@ -587,9 +587,7 @@ main{
         text-align: center;
         gap: 1rem;
         justify-content: space-between;
-        padding: 4rem 0rem 6.8rem 0rem;
-
-        border-top: 0.4rem solid var(--green);
+        padding: 2rem 0rem 6.8rem 0rem;
     }
     
     .box-item{
@@ -604,11 +602,11 @@ main{
     }
     
     .item-title{
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
     
     .item-text{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
 }
@@ -625,12 +623,20 @@ main{
 }
 
 @media(max-width: 550px){
+    .card-title-main{
+        font-size: 3.8rem;
+    }
     .box-post-main{
         padding: 6rem 0rem 12rem 0rem;
     }
+}
 
-    .box-posts-row{
-        padding-bottom: 15rem;
+@media(max-width: 515px){
+    .card-title-main{
+        font-size: 3.5rem;
+    }
+    .box-post-main{
+        padding: 6rem 0rem 12rem 0rem;
     }
 }
 
@@ -715,7 +721,13 @@ main{
     }
 }
 
-@media(max-width: 314px){
+@media(max-width: 340px){
+    .box-posts-row{
+        padding-bottom: 20rem;
+    }
+}
+
+@media(max-width: 316px){
     .box-post-main{
         padding: 6rem 0rem 8rem 0rem;
     }
